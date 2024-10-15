@@ -1,0 +1,129 @@
+
+
+
+
+
+
+
+
+
+react bootsstrap -grid system
+-----------------------------------
+-container
+-
+
+
+
+
+
+
+
+-link tag used to navigate from templates-to attributes is set to path
+
+
+
+
+
+
+
+
+
+
+
+json server-
+------------
+-json server lightweight easy to use node js tool that simulates a restful api using jaison file as the data source
+
+-with json server frondend developers can create mock apis without the need of complex server side code . or when a backend api isn't ready yet
+
+-How to create json server
+---------------------------
+1)create a folder for the server 
+2)use command npm init -y- inorder to install package.file .
+3)install all the libraries requred to set up the server
+      -json server - npm i seerver / npm is json-server@0.17.4
+      -it will create node modules as well as package.lock.json
+4)To create .gitignore file - inorder to mention the file name which have to be ignored while pushing the code to git
+5)create a file to store data with an extention as .json (content shold be json format)
+6)create index.jsxfile - it is the only runs at the backend
+      -edit script key with start command
+
+       -index.js-
+       -1)import json server liberary using require keyword
+       2) create server using create() in jsonserver liberary
+       3)set up port number for the server to run
+              -process.env.PORT -access the available port for the server to run if the default is consume
+         4)use the middleware to parse the json format default-method will return the middleware  
+         middleware:- to perfoam activities by breaking/controlling the request response cylcle to convert data to perfoam applications   
+          
+        5)node mon to refresh the
+
+ axios--
+ ----------
+ -axios is the promise based http clint node.js and the browser   
+ -used two make trip http request between browser (frondend ) and the node .js environment (backend)
+Content-type
+syntax
+-axios(config)
+config = {
+      method:value,
+      url:value,
+      data:value,
+      headers:value
+}
+-how to set to content type of headers-
+
+ 1)application/json-if the body of the request contains only input data and hosted content
+2)multipart/form-data-if the request body contains uploaded contents from the sysbel as well
+
+
+side activities:-
+-----------------
+-those activities which effects the pure function are called side effect
+-in react side effects are handled by using usebeffect hook
+eg:-api call inside a component
+
+
+use effect:-
+syntax:-
+
+-activitis perfoam by calling effect is given asthe first argument
+
+useffect(()=>{
+
+},dependancy)
+-activities to be formed while calling effects is given as the first argument
+-dependency -ehen the useffect have to be called 
+-there are three types of dependency
+1)no dependancy-useffect will be invoked in esach render
+2)emplty array([]) -use effect is called in the first render
+3)state/props:-useffect will be called in the first render and also when the state or props changes its value
+
+state lifting:-
+ -it is also used for sharing data
+ -mechanisam of sharing data 
+ -data display cheyunna sibling n stateum dataprovide chryunna sibling n statechange functionnum kodukum
+
+ Intl.DateTimeFormat:- 
+ object enables language-sensitive date and time formatting.
+ 
+ syntax:-
+ new Intl.DateTimeFormat(formate).format(time to be formated)
+
+ path:-
+ diffrent way of sending data 
+ 1)body parameter
+ 2)path parameter
+ 3)query parameter
+
+
+
+
+ drag and drop machanisam
+ -----------------------
+ -dragable-they are attributes
+ -droppable
+ -ondragstart()-they are events- data is send using this event
+ set data()- to function to share data
+ -dragover()-to prevent data lose
+ -ondrop()- to access 
